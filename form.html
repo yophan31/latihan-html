@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran</title>
+</head>
+<body>
+  <nav>
+    <a href="blog.html">Blog</a> | 
+    <a href="form.html">Form Pendaftaran</a> | 
+    <a href="tabel.html">Tabel Perolehan Nilai</a> | 
+    <a href="cv.html">Curriculum Vitae</a>
+  </nav>
+
+  <h1>Form Pendaftaran Fashion Community</h1>
+  <form>
+    <label>Nama Lengkap: <input type="text" name="nama"></label><br><br>
+
+    <label>Jenis Kelamin:<br>
+      <input type="radio" name="gender" value="pria"> Pria
+      <input type="radio" name="gender" value="wanita"> Wanita
+    </label><br><br>
+
+    <label>Tempat Lahir: <input type="text" name="tempat"></label><br><br>
+
+    <label>Tanggal Lahir: <input type="date" name="tanggal"></label><br><br>
+
+    <label>Hobi:<br>
+      <input type="checkbox" name="hobi" value="belanja"> Belanja Fashion<br>
+      <input type="checkbox" name="hobi" value="mixmatch"> Mix & Match Outfit<br>
+      <input type="checkbox" name="hobi" value="fotografi"> Fotografi Fashion<br>
+    </label><br>
+
+    <label>Password: <input type="password" name="password"></label><br><br>
+
+    <label>
+      <input type="checkbox" name="persetujuan" required> Saya setuju dengan syarat dan ketentuan
+    </label><br><br>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
