@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+</head>
+<body>
+
+  <nav>
+    <a href="blog.html">Blog</a> |
+    <a href="form.html">Form Pendaftaran</a> |
+    <a href="tabel.html">Tabel Perolehan Nilai</a> |
+    <a href="cv.html">Curriculum Vitae</a>
+  </nav>
+  <hr>
+
+  <header>
+    <h1>Blog</h1>
+    <p>Daftar postingan terbaru</p>
+  </header>
+
+  <article>
+    <img src="https://picsum.photos/seed/blog1/800/300" alt="Gambar sampul blog" width="800" height="300">
+    <h2><a href="detail-blog.html">Belajar Dasar Pengembangan Web</a></h2>
+
+    <section>
+      <img src="https://picsum.photos/seed/author1/64/64" alt="Foto penulis" width="48" height="48">
+      <p>
+        <strong>Author:</strong> Sri Mahasiswa<br>
+        <strong>Tanggal:</strong> 02 September 2025
+      </p>
+    </section>
+
+    <section>
+      <p><strong>Label:</strong></p>
+      <ul>
+        <li>HTML</li>
+        <li>PABWE</li>
+        <li>Belajar Web</li>
+      </ul>
+    </section>
+  </article>
+
+  <hr>
+  <footer>
+    <p>&copy; 2025 Blog PABWE</p>
+  </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Blog</title>
+</head>
+<body>
+ 
+  <p><a href="blog.html">&larr; Kembali ke Blog</a></p>
+  <hr>
+
+  <article>
+    <img src="https://picsum.photos/seed/cover1/1000/350" alt="Cover postingan" width="1000" height="350">
+
+    <section>
+      <img src="https://picsum.photos/seed/author1/64/64" alt="Foto penulis" width="48" height="48">
+      <p>
+        <strong>Author:</strong> Sri Mahasiswa<br>
+        <strong>Tanggal:</strong> 02 September 2025
+      </p>
+    </section>
+
+    <h1>Belajar Dasar Pengembangan Web</h1>
+
+    <section>
+      <p><strong>Label:</strong></p>
+      <ul>
+        <li>HTML</li>
+        <li>PABWE</li>
+        <li>Belajar Web</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Deskripsi</h2>
+      <p>
+        Pada postingan ini kita memulai dari struktur dasar HTML tanpa CSS dan JavaScript.
+        Kita fokus pada elemen-elemen semantik seperti <code>&lt;header&gt;</code>,
+        <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, dan
+        <code>&lt;footer&gt;</code> agar dokumen mudah dipahami browser dan pembaca.
+      </p>
+    </section>
+
+    <section>
+      <h2>Form Komentar</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="nama">Nama</label><br>
+          <input type="text" id="nama" name="nama" required>
+        </p>
+        <p>
+          <label for="komentar">Komentar</label><br>
+          <textarea id="komentar" name="komentar" rows="4" cols="40" required></textarea>
+        </p>
+        <p>
+          <button type="submit">Kirim</button>
+        </p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Daftar Komentar</h2>
+
+      <div>
+        <img src="https://picsum.photos/seed/user1/48/48" alt="Foto komentator" width="32" height="32">
+        <p><strong>Andi</strong></p>
+        <p>Terima kasih, penjelasannya jelas sekali!</p>
+      </div>
+      <hr>
+      <div>
+        <img src="https://picsum.photos/seed/user2/48/48" alt="Foto komentator" width="32" height="32">
+        <p><strong>Bella</strong></p>
+        <p>Saya jadi paham perbedaan elemen semantik.</p>
+      </div>
+
+    </section>
+  </article>
+
+  <hr>
+  <footer>
+    <p>&copy; 2025 Blog PABWE</p>
+  </footer>
+</body>
+</html>
+```
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran</title>
+</head>
+<body>
+  <nav>
+    <a href="blog.html">Blog</a> |
+    <a href="form.html">Form Pendaftaran</a> |
+    <a href="tabel.html">Tabel Perolehan Nilai</a> |
+    <a href="cv.html">Curriculum Vitae</a>
+  </nav>
+  <hr>
+
+  <header>
+    <h1>Form Pendaftaran</h1>
+    <p>Isikan data diri dengan benar.</p>
+  </header>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Data Pribadi</legend>
+
+      <p>
+        <label for="nama">Nama Lengkap</label><br>
+        <input type="text" id="nama" name="nama" required>
+      </p>
+
+      <p>Jenis Kelamin<br>
+        <label><input type="radio" name="jk" value="Laki-laki" required> Laki-laki</label>
+        <label><input type="radio" name="jk" value="Perempuan" required> Perempuan</label>
+      </p>
+
+      <p>
+        <label for="tempat">Tempat Lahir</label><br>
+        <input type="text" id="tempat" name="tempat" required>
+      </p>
+
+      <p>
+        <label for="tanggal">Tanggal Lahir</label><br>
+        <input type="date" id="tanggal" name="tanggal" required>
+      </p>
+
+      <p>Hobi (boleh lebih dari satu)<br>
+        <label><input type="checkbox" name="hobi" value="Membaca"> Membaca</label>
+        <label><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label>
+        <label><input type="checkbox" name="hobi" value="Musik"> Musik</label>
+        <label><input type="checkbox" name="hobi" value="Ngoding"> Ngoding</label>
+      </p>
+
+      <p>
+        <label for="pwd">Password</label><br>
+        <input type="password" id="pwd" name="pwd" required>
+      </p>
+
+      <p>
+        <label>
+          <input type="checkbox" name="setuju" required>
+          Saya menyetujui syarat dan ketentuan
+        </label>
+      </p>
+
+      <p>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </p>
+    </fieldset>
+  </form>
+
+  <hr>
+  <footer>
+    <p>&copy; 2025 Form Pendaftaran</p>
+  </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabel Perolehan Nilai</title>
+</head>
+<body>
+  <nav>
+    <a href="blog.html">Blog</a> |
+    <a href="form.html">Form Pendaftaran</a> |
+    <a href="tabel.html">Tabel Perolehan Nilai</a> |
+    <a href="cv.html">Curriculum Vitae</a>
+  </nav>
+  <hr>
+
+  <header>
+    <h1>Tabel Perolehan Nilai</h1>
+    <p>Bentuk tabel menyerupai contoh (tanpa gaya).</p>
+  </header>
+
+  <table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Tugas</th>
+        <th>UTS</th>
+        <th>UAS</th>
+        <th>Nilai Akhir</th>
+        <th>Keterangan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Andi</td>
+        <td>85</td>
+        <td>80</td>
+        <td>90</td>
+        <td>85.0</td>
+        <td>Lulus</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bella</td>
+        <td>90</td>
+        <td>88</td>
+        <td>92</td>
+        <td>90.0</td>
+        <td>Lulus</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Chandra</td>
+        <td>70</td>
+        <td>75</td>
+        <td>80</td>
+        <td>75.0</td>
+        <td>Lulus</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Dewi</td>
+        <td>60</td>
+        <td>65</td>
+        <td>70</td>
+        <td>65.0</td>
+        <td>Remedial</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5"><strong>Rata-rata Kelas</strong></td>
+        <td>78.8</td>
+        <td>-</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <hr>
+  <footer>
+    <p>&copy; 2025 Tabel Nilai</p>
+  </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Sri</title>
+</head>
+<body>
+  <nav>
+    <a href="blog.html">Blog</a> |
+    <a href="form.html">Form Pendaftaran</a> |
+    <a href="tabel.html">Tabel Perolehan Nilai</a> |
+    <a href="cv.html">Curriculum Vitae</a>
+  </nav>
+  <hr>
+
+  <header>
+    <h1>Curriculum Vitae</h1>
+  </header>
+
+  <section>
+    <img src="https://picsum.photos/seed/foto-profil/160/160" alt="Foto profil" width="120" height="120">
+    <h2>Sri Mahasiswa</h2>
+    <p>Email: <a href="mailto:sri@example.com">sri@example.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6281234567890">+62 812-3456-7890</a></p>
+  </section>
+
+  <section>
+    <h2>Tentang</h2>
+    <p>
+      Mahasiswa Informatika yang tertarik pada pengembangan aplikasi berbasis web.
+      Fokus pada dasar-dasar HTML, aksesibilitas, dan semantik dokumen.
+    </p>
+  </section>
+
+  <section>
+    <h2>Riwayat Pendidikan</h2>
+    <ul>
+      <li>S1 Informatika — Universitas Contoh (2023–sekarang)</li>
+      <li>SMA IPA — SMA Negeri Contoh (2020–2023)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pengalaman</h2>
+    <ul>
+      <li>Asisten Praktikum Dasar Pemrograman (2024)</li>
+      <li>Panitia Tech Event Kampus (2024)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Keahlian</h2>
+    <ul>
+      <li>HTML dasar</li>
+      <li>Git dasar</li>
+      <li>Penulisan dokumentasi</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sertifikat</h2>
+    <ul>
+      <li>Dasar HTML (2025)</li>
+      <li>Manajemen Proyek Pemula (2024)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Portfolio</h2>
+    <ul>
+      <li>Halaman Blog sederhana (tautan internal: <a href="blog.html">lihat Blog</a>)</li>
+      <li>Form Pendaftaran (tautan internal: <a href="form.html">lihat Form</a>)</li>
+    </ul>
+  </section>
+
+  <hr>
+  <footer>
+    <p>&copy; 2025 Sri Mahasiswa</p>
+  </footer>
+</body>
+</html>
+```
